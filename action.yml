@@ -1,0 +1,22 @@
+name: 'Spotify playlist archiver'
+description: 'Back up your music library'
+inputs:
+  output-file:
+    description: 'File to dump JSON output into'
+    required: true
+    default: 'World'
+runs:
+  using: "composite"
+  steps:
+    - name: Install spotify-tracks-archiver
+      run: python -m pip install spotify-tracks-archiver
+      shell: bash
+    - name: Setup git user
+      run: git config user.name spotify-tracks-archiver && git config user.email spotify-tracks-archiver@github.com
+      shell: bash
+    - name: Running spotify_tracks_archiver
+      run: spotify_tracks_archiver > ${{ inputs.output-file }}
+      shell: bash
+    - name: Adding and committing new output file
+      run: git add ${{ inputs.output-file }} && git commit -m "Commiting updated output" && git push
+      shell: bash
