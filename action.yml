@@ -1,7 +1,8 @@
 name: 'Spotify saved songs archiver'
 description: 'Back up your saved tracks to a JSON'
-icon: music
-color: purple
+branding:
+  icon: 'music'
+  color: 'purple'
 inputs:
   output-file:
     description: 'File path to dump JSON output into'
