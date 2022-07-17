@@ -1,8 +1,10 @@
-name: 'Spotify playlist archiver'
-description: 'Back up your music library'
+name: 'Spotify saved songs archiver'
+description: 'Back up your saved tracks to a JSON'
+icon: music
+color: purple
 inputs:
   output-file:
-    description: 'File to dump JSON output into'
+    description: 'File path to dump JSON output into'
     required: true
     default: 'World'
 runs:
