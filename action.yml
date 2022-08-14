@@ -21,5 +21,5 @@ runs:
       run: spotify_tracks_archiver > ${{ inputs.output-file }}
       shell: bash
     - name: Adding and committing new output file
-      run: if [[ -n "$(git status --porcelain)" ]]; then git add ${{ inputs.output-file }} && git commit -m "Commiting updated output" && git pull --rebase=true && git push; fi
+      run: if [[ -n "$(git status --porcelain)" ]]; then git add ${{ inputs.output-file }} && git commit -m "Commiting updated archive" && git pull --rebase=true && git push; fi
       shell: bash
