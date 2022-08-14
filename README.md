@@ -1,4 +1,4 @@
-# spotify-tracks-archiver-action V1.0.1
+# spotify-tracks-archiver-action V1.0.2
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/keller00/spotify-tracks-archiver-action/main.svg)](https://results.pre-commit.ci/latest/github/keller00/spotify-tracks-archiver)
 
@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
-    - uses: keller00/spotify-tracks-archiver-action@v1.0.0
+    - uses: keller00/spotify-tracks-archiver-action@v1.0.2
       with:
         output-file: library.json
       env:
