@@ -1,4 +1,4 @@
-# spotify-tracks-archiver-action V1
+# spotify-tracks-archiver-action V1.0.1
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/keller00/spotify-tracks-archiver-action/main.svg)](https://results.pre-commit.ci/latest/github/keller00/spotify-tracks-archiver)
 
